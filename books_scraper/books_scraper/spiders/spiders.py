@@ -6,7 +6,7 @@ from books_scraper.spiders.urls import categories_urls
 
 class FeriachilenaSpider(scrapy.Spider):
 	name = "feriachilena"
-	start_urls = ["https://feriachilenadellibro.cl/categoria-producto/arquitectura-y-urbanismo/"]
+	start_urls = categories_urls
 	
 	def parse(self, response, **kwargs):
 
@@ -27,6 +27,7 @@ class FeriachilenaSpider(scrapy.Spider):
 		loader.add_xpath("name", ".//h1[@class='product_title entry-title']/text()")
 		loader.add_xpath("author", ".//div[@class='woocommerce-product-details__short-description']/p")
 		loader.add_xpath("link", "head/link[@rel='canonical']/@href")
+		loader.add_xpath("description", ".//div[@id='tab-description']/p")
 		loader.add_xpath("price", ".//p[@class='price']/span/bdi/text()")
 		loader.add_value("website", "feriachilena")
 		

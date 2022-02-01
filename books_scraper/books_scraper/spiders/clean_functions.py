@@ -37,6 +37,14 @@ def clean_special_characters(string):
 	string = string.replace("\u201d", "")
 	string = string.replace("\u201c", "")
 	string = string.replace("nia\u00b1os", "ninos")
+	string = string.replace("\u00ab", "")
+	string = string.replace("\u00bb", "")
+	string = string.replace("\u2018", "")
+	string = string.replace("\u2019", "")
+	string = string.replace("\u0301", "")
+	string = string.replace("\u2014", "")
+	string = string.replace("\u0303", "")
+	string = string.replace("\u00ad", "")
 	
 	return string
 
