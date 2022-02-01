@@ -1,12 +1,12 @@
 import scrapy
 from books_scraper.items import BooksScraperItem
 from scrapy.loader import ItemLoader
-from books_scraper.spiders.urls import categories_urls
+from books_scraper.spiders.urls import feriachilena_urls
 
 
 class FeriachilenaSpider(scrapy.Spider):
 	name = "feriachilena"
-	start_urls = categories_urls
+	start_urls = feriachilena_urls
 	
 	def parse(self, response, **kwargs):
 

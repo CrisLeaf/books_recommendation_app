@@ -1,4 +1,4 @@
-categories_urls = [
+feriachilena_urls = [
 	"https://feriachilenadellibro.cl/categoria-producto/arquitectura-y-urbanismo/",
 	"https://feriachilenadellibro.cl/categoria-producto/arte-y-diseno/",
 	"https://feriachilenadellibro.cl/categoria-producto/autoayuda-y-esoterismo/autoayuda/",

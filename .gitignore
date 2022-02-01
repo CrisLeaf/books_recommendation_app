@@ -281,3 +281,5 @@ cython_debug/
 .idea/books_recommendation.iml
 
 .idea/modules.xml
+
+books_scraper/secrets.py
